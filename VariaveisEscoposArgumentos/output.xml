@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-20T19:14:45.503908" rpa="false" schemaversion="5">
+<suite id="s1" name="Atividadellista" source="c:\CursoUdemy\RobotFramework\VariaveisEscoposArgumentos\atividadellista.robot">
+<test id="s1-t1" name="email customizado" line="8">
+<kw name="criando email">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-07-20T19:14:45.551918" level="INFO">${PALAVRA_ALEATORIA} = oN7c96dN</msg>
+<var>${PALAVRA_ALEATORIA}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-07-20T19:14:45.551918" elapsed="0.002001"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-20T19:14:45.554920" level="INFO">${EMAIL_CRIADO} = ['Marlon', 'Porto', 'oN7c96dN', '@testerobot.com']</msg>
+<var>${EMAIL_CRIADO}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.sobrenome}</arg>
+<arg>${PALAVRA_ALEATORIA}</arg>
+<arg>@testerobot.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-20T19:14:45.554920" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${EMAIL_CRIADO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-20T19:14:45.555919" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${EMAIL_CRIADO}</value>
+<status status="PASS" start="2024-07-20T19:14:45.556921" elapsed="0.000000"/>
+</return>
+<msg time="2024-07-20T19:14:45.556921" level="INFO">${EMAIL} = ['Marlon', 'Porto', 'oN7c96dN', '@testerobot.com']</msg>
+<var>${EMAIL}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.sobrenome}</arg>
+<status status="PASS" start="2024-07-20T19:14:45.549918" elapsed="0.007003"/>
+</kw>
+<status status="PASS" start="2024-07-20T19:14:45.548918" elapsed="0.009002"/>
+</test>
+<status status="PASS" start="2024-07-20T19:14:45.510909" elapsed="0.048011"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Atividadellista">Atividadellista</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-20T19:14:45.469900" level="WARN">Error in file 'c:\CursoUdemy\RobotFramework\VariaveisEscoposArgumentos\atividadellista.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
